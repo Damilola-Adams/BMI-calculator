@@ -9,8 +9,8 @@ import streamlit as st
 st.title("BMI Calculator")
 
 name = st.text_input("Enter your name")
-weight = st.number_input("Enter your weight (pounds)", min_value=1)
-height = st.number_input("Enter your height (inches)", min_value=1)
+weight = st.number_input("Enter your weight (pounds)")
+height = st.number_input("Enter your height (inches)")
 
 if st.button("Calculate BMI"):
     bmi = (weight * 703) / (height ** 2)
